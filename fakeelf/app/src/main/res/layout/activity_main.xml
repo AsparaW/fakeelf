@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainl"
+    tools:context=".component.activity.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/b_detail"
+        android:background="#FFFFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/ic_music_detail" />
+
+
+    <TextView
+        android:id="@+id/t_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/t_musicname"
+        app:layout_constraintStart_toStartOf="@+id/t_musicname"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/t_musicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="MusicName" />
+
+    <ImageView
+        android:id="@+id/i_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/b_mood"
+        app:layout_constraintEnd_toEndOf="@+id/b_mood"
+        app:layout_constraintStart_toStartOf="@+id/b_mood"
+        app:srcCompat="@mipmap/bg_frame_short" />
+
+    <ImageView
+        android:id="@+id/i_m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/b_mood"
+        app:layout_constraintEnd_toEndOf="@+id/b_mood"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/b_mood"
+        app:srcCompat="@mipmap/ic_mood_unhappy" />
+
+    <ImageView
+        android:id="@+id/i_m2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/i_m1"
+        app:layout_constraintEnd_toEndOf="@+id/i_m1"
+        app:layout_constraintStart_toStartOf="@+id/i_m1"
+        app:srcCompat="@mipmap/ic_mood_unhappy" />
+
+    <ImageView
+        android:id="@+id/i_m3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/i_m2"
+        app:layout_constraintEnd_toEndOf="@+id/b_mood"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/b_mood"
+        app:srcCompat="@mipmap/ic_mood_unhappy" />
+
+    <ImageView
+        android:id="@+id/b_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_mood_happy" />
+
+
+</android.support.constraint.ConstraintLayout>
